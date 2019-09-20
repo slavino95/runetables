@@ -1,0 +1,16 @@
+#toolbar-title {
+  color: #e1bb34;
+}
+
+.fill-space {
+  /* This fills the remaining space, by using flexbox. */
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  justify-content: space-between;
+}
