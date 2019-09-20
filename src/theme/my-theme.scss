@@ -1,0 +1,79 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$mat-rune-primary: (
+  50: #e1e3e4,
+  100: #b3b8ba,
+  200: #81898d,
+  300: #4e5a5f,
+  400: #28363c,
+  500: #02131a,
+  600: #021117,
+  700: #010e13,
+  800: #010b0f,
+  900: #010608,
+  A100: #4eb7ff,
+  A200: #1ba3ff,
+  A400: #0089e7,
+  A700: #007ace,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff
+  )
+);
+
+$mat-rune-accent: (
+  50: #fbf7e7,
+  100: #f6ebc2,
+  200: #f0dd9a,
+  300: #eacf71,
+  400: #e6c552,
+  500: #e1bb34,
+  600: #ddb52f,
+  700: #d9ac27,
+  800: #d5a421,
+  900: #cd9615,
+  A100: #fffefd,
+  A200: #ffeeca,
+  A400: #ffdd97,
+  A700: #ffd57e,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+
+$runetables-app-primary: mat-palette($mat-rune-primary);
+$runetables-app-accent: mat-palette($mat-rune-accent);
+
+$runetables-app-theme: mat-light-theme(
+  $runetables-app-primary,
+  $runetables-app-accent
+);
+
+@include angular-material-theme($runetables-app-theme);
