@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  justify-content: space-between;
+}
+
+.sidenav {
+  width: 20%;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#toolbar-title {
+  color: #e1bb34;
+}
+
+.fill-space {
+  /* This fills the remaining space, by using flexbox.
+  Fill-space element takes all remaining space. */
+  flex: 1 1 auto;
+}
+
+.header-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  justify-content: space-between;
+}
